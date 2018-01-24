@@ -26,14 +26,14 @@ typedef CountdownAnimationView *(^YLsoundArr)(NSArray<NSString*> *array);
 
 @interface CountdownAnimationView : UIView
 
-@property (nonatomic,copy,readonly) YLdurationTime durationTime;
-@property (nonatomic,copy,readonly) YLfromValue    fromValue;
-@property (nonatomic,copy,readonly) YLtoValue      toValue;
-@property (nonatomic,copy,readonly) YLfontSize     fontSize;
-@property (nonatomic,copy,readonly) YLstart        start;
-@property (nonatomic,copy,readonly) YLtitleArr     titleArr;
-@property (nonatomic,copy,readonly) YLsoundArr     soundArr;
-@property (nonatomic,copy         ) YLclick        click;
+@property (nonatomic,copy,readonly) YLdurationTime YldurationTime;
+@property (nonatomic,copy,readonly) YLfromValue    YlfromValue;
+@property (nonatomic,copy,readonly) YLtoValue      YltoValue;
+@property (nonatomic,copy,readonly) YLfontSize     YlfontSize;
+@property (nonatomic,copy,readonly) YLstart        Ylstart;
+@property (nonatomic,copy,readonly) YLtitleArr     YltitleArr;
+@property (nonatomic,copy,readonly) YLsoundArr     YlsoundArr;
+@property (nonatomic,copy         ) YLclick        Ylclick;
 
 - (void)startAni;
 

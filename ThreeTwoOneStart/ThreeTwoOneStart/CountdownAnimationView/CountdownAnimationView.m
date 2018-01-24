@@ -35,7 +35,7 @@
     self.mtitleArr              = @[@"3",@"2",@"1",@"GO"];
     self.msoundArr              = @[@"num_3.mp3",@"num_2.mp3",@"num_1.mp3",@"orun_start.mp3"];
     
-    self.aniLabel.font          = [UIFont boldSystemFontOfSize:200.f];
+    self.aniLabel.font          = [UIFont boldSystemFontOfSize:180.f];
     self.scaleAnim.fromValue    = [NSNumber numberWithFloat:1.5f];
     self.scaleAnim.toValue      = [NSNumber numberWithFloat:0.25f];
     self.scaleAnim.duration     = 1.0f;
@@ -57,8 +57,8 @@
     {//加分
         if (self.aniLabel.tag == self.mtitleArr.count - 1)
         {//动画播放结束do something
-            if (self.click) {
-                self.click();
+            if (self.Ylclick) {
+                self.Ylclick();
             }
         }else
         {//播放动画
@@ -72,7 +72,7 @@
     
 }
 #pragma mark - block
-- (YLdurationTime)durationTime
+- (YLdurationTime)YldurationTime
 {
     __weak typeof(self) weakSelf = self;
     return ^(CGFloat value)
@@ -82,7 +82,7 @@
     };
 }
 
-- (YLfromValue)fromValue
+- (YLfromValue)YlfromValue
 {
     __weak typeof(self) weakSelf = self;
     return ^(CGFloat value)
@@ -92,7 +92,7 @@
     };
 }
 
-- (YLtoValue)toValue
+- (YLtoValue)YltoValue
 {
     __weak typeof(self) weakSelf = self;
     return ^(CGFloat value)
@@ -102,7 +102,7 @@
     };
 }
 
-- (YLfontSize)fontSize
+- (YLfontSize)YlfontSize
 {
     __weak typeof(self) weakSelf = self;
     return ^(CGFloat value)
@@ -112,7 +112,7 @@
     };
 }
 
-- (YLsoundArr)soundArr
+- (YLsoundArr)YlsoundArr
 {
     __weak typeof(self) weakSelf = self;
     return ^(NSArray<NSString*> *array)
@@ -122,7 +122,7 @@
     };
 }
 
-- (YLtitleArr)titleArr
+- (YLtitleArr)YltitleArr
 {
     __weak typeof(self) weakSelf = self;
     return ^(NSArray<NSString*> *array)
@@ -132,7 +132,7 @@
     };
 }
 
-- (YLstart)start
+- (YLstart)Ylstart
 {
     __weak typeof(self) weakSelf = self;
     return ^(void)
