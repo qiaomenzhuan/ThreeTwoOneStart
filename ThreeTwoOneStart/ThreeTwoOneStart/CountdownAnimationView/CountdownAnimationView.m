@@ -57,8 +57,8 @@
     {//加分
         if (self.aniLabel.tag == self.mtitleArr.count - 1)
         {//动画播放结束do something
-            if (self.Ylclick) {
-                self.Ylclick();
+            if (self.YlClick) {
+                self.YlClick();
             }
         }else
         {//播放动画
@@ -72,7 +72,7 @@
     
 }
 #pragma mark - block
-- (YLdurationTime)YldurationTime
+- (YLdurationTime)YlDurationTime
 {
     __weak typeof(self) weakSelf = self;
     return ^(CGFloat value)
@@ -82,7 +82,7 @@
     };
 }
 
-- (YLfromValue)YlfromValue
+- (YLfromValue)YlFromValue
 {
     __weak typeof(self) weakSelf = self;
     return ^(CGFloat value)
@@ -92,7 +92,7 @@
     };
 }
 
-- (YLtoValue)YltoValue
+- (YLtoValue)YlToValue
 {
     __weak typeof(self) weakSelf = self;
     return ^(CGFloat value)
@@ -102,7 +102,7 @@
     };
 }
 
-- (YLfontSize)YlfontSize
+- (YLfontSize)YlFontSize
 {
     __weak typeof(self) weakSelf = self;
     return ^(CGFloat value)
@@ -112,7 +112,7 @@
     };
 }
 
-- (YLsoundArr)YlsoundArr
+- (YLsoundArr)YlSoundArr
 {
     __weak typeof(self) weakSelf = self;
     return ^(NSArray<NSString*> *array)
@@ -122,7 +122,7 @@
     };
 }
 
-- (YLtitleArr)YltitleArr
+- (YLtitleArr)YlTitleArr
 {
     __weak typeof(self) weakSelf = self;
     return ^(NSArray<NSString*> *array)
@@ -132,7 +132,7 @@
     };
 }
 
-- (YLstart)Ylstart
+- (YLstart)YlStart
 {
     __weak typeof(self) weakSelf = self;
     return ^(void)

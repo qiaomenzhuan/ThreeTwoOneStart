@@ -30,13 +30,13 @@
     [self.view addSubview:self.animationView];
     
     self.animationView
-    .YlfromValue(2.f)
-    .YltoValue(0.2f)
-    .YldurationTime(0.9f)
-    .YltitleArr(self.countArr)
-    .YlsoundArr(self.soundArr)
-    .Ylstart()
-    .Ylclick = ^{
+    .YlFromValue(2.f)
+    .YlToValue(0.2f)
+    .YlDurationTime(0.9f)
+    .YlTitleArr(self.countArr)
+    .YlSoundArr(self.soundArr)
+    .YlStart()
+    .YlClick = ^{
         NSLog(@"动画结束");
     };
     
