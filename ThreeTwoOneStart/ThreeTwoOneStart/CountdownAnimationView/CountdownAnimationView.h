@@ -19,7 +19,6 @@ typedef CountdownAnimationView *(^YLfontSize    )(CGFloat value);
 
 typedef CountdownAnimationView *(^YLstart       )(void);
 
-
 typedef CountdownAnimationView *(^YLtitleArr)(NSArray<NSString*> *array);
 typedef CountdownAnimationView *(^YLsoundArr)(NSArray<NSString*> *array);
 
