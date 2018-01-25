@@ -37,6 +37,7 @@
     .YlSoundArr(self.soundArr)
     .YlStart()
     .YlClick = ^{
+        NSLog(@"动画结束");
     };
     
     self.onceMore.titleLabel.font = [UIFont systemFontOfSize:14.f];

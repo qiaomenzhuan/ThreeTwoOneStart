@@ -57,6 +57,7 @@
     {//加分
         if (self.aniLabel.tag == self.mtitleArr.count - 1)
         {//动画播放结束do something
+            self.aniLabel.text = @"";
             if (self.YlClick) {
                 self.YlClick();
             }
@@ -118,6 +119,9 @@
     return ^(NSArray<NSString*> *array)
     {
         weakSelf.msoundArr = array;
+        if (weakSelf.mtitleArr.count != weakSelf.msoundArr.count) {
+            NSAssert(NO, @"文字数组和声音数组的个数必须相同");
+        }
         return weakSelf;
     };
 }
